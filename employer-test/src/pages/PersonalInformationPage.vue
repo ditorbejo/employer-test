@@ -39,15 +39,15 @@ const fields = ref([
     option: [
       {
         value: '1',
-        labelSelect: '1'
+        labelSelect: '1 tahun'
       },
       {
         value: '2',
-        labelSelect: '2'
+        labelSelect: '2 tahun'
       },
       {
         value: '3',
-        labelSelect: '3'
+        labelSelect: '3 tahun'
       }
     ],
     selectedOption: ''
@@ -280,7 +280,11 @@ onMounted(async () => {
             ]"
           >
             <p class="w-1/2 font-bold">{{ field.label }}</p>
-            <input class="flex-1 w-full capitalize" type="date" v-model="field.value" />
+            <input
+              class="text-black/70 flex-1 w-full capitalize"
+              type="date"
+              v-model="field.value"
+            />
           </div>
           <div
             v-else-if="field.type === 'select'"
@@ -292,7 +296,7 @@ onMounted(async () => {
             <label for="selected" class="w-1/2 font-bold">{{ field.label }}</label>
 
             <select
-              class="flex-1 capitalize"
+              class="flex-1 capitalize text-black/70"
               name="selected"
               id="selected"
               v-model="field.selectedOption"
@@ -310,7 +314,11 @@ onMounted(async () => {
             ]"
           >
             <p class="w-1/2 font-bold">{{ field.label }}</p>
-            <input class="flex-1 w-full capitalize" type="text" v-model="field.value" />
+            <input
+              class="text-black/70 flex-1 w-full capitalize"
+              type="text"
+              v-model="field.value"
+            />
           </div>
         </div>
       </div>

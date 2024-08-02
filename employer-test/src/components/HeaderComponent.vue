@@ -6,7 +6,7 @@ import User from '../assets/public/user1.png'
 <template>
   <header class="py-3 px-6 h-[72px]">
     <div class="flex flex-row items-center justify-between">
-      <button>
+      <button class="">
         <img :src="Marca" alt="" class="w-[150px h-[45px]" />
       </button>
       <div class="w-2/5">
